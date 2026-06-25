@@ -6,22 +6,97 @@
   <title>Privacy Policy — Weatherball</title>
   <style>
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b1620; color: #f5f7fa; line-height: 1.6; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 8vh 24px 64px; }
-    h1 { letter-spacing: -0.02em; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 8vh 24px 96px; }
+    h1 { letter-spacing: -0.02em; margin-bottom: 0.2em; }
+    h2 { margin-top: 2.2em; font-size: 1.25rem; }
+    h3 { margin-top: 1.6em; font-size: 1.05rem; }
     a { color: #4ea1ff; }
     .muted { color: #9fb0c0; font-size: 0.9rem; }
+    .lead { font-size: 1.1rem; color: #d6e0ea; }
+    ul { padding-left: 1.25em; }
+    li { margin: 0.4em 0; }
+    .callout { background: rgba(78,161,255,0.08); border: 1px solid rgba(78,161,255,0.25); border-radius: 10px; padding: 16px 20px; margin: 1.5em 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.95rem; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.1); vertical-align: top; }
+    th { color: #9fb0c0; font-weight: 600; }
+    footer { margin-top: 4em; padding-top: 1.5em; border-top: 1px solid rgba(255,255,255,0.08); color: #9fb0c0; font-size: 0.9rem; }
   </style>
 </head>
 <body>
   <main class="wrap">
     <p><a href="/">&larr; Weatherball</a></p>
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: TODO</p>
+    <p class="muted">Last updated: June 25, 2026</p>
 
-    <p>TODO: Replace this with your privacy policy. At minimum, describe what data the app collects (e.g. location for forecasts), how it is used, any third parties it is shared with (e.g. RevenueCat for subscriptions, weather data providers), and how users can contact you.</p>
+    <p class="lead">Weatherball is built to be private by default. We don't make you create an account, we don't run analytics or advertising trackers, and we never sell your data.</p>
+
+    <div class="callout">
+      <strong>The short version:</strong> Weatherball uses your location only to show you local weather, and that location is handled on your device by Apple's WeatherKit — it is never sent to our servers. If you subscribe, our payments partner (RevenueCat) and Apple process your subscription. That's it.
+    </div>
+
+    <p>This policy explains what information the Weatherball app ("Weatherball," "the app," "we," "us") collects, how it is used, and the choices you have. It applies to the Weatherball iOS app, its widgets, and the companion Apple Watch app.</p>
+
+    <h2>Information we collect and how we use it</h2>
+
+    <h3>Location</h3>
+    <p>If you grant location access, Weatherball uses your device's location to load weather conditions and forecasts for where you are. Location is requested only while you are using the app ("When In Use").</p>
+    <p>Your location is processed on your device and passed to <strong>Apple WeatherKit</strong> to retrieve forecast data. Your precise location <strong>is not transmitted to or stored on Weatherball's own servers</strong>. Apple's handling of WeatherKit requests is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+    <p>You can change or revoke location access at any time in <em>iOS Settings → Privacy &amp; Security → Location Services → Weatherball</em>. The app remains usable without location access; you simply won't see weather for your current position.</p>
+
+    <h3>Subscriptions and purchases</h3>
+    <p>Weatherball offers an optional paid subscription. Purchases are processed by <strong>Apple</strong> and managed through our subscription provider, <strong>RevenueCat</strong>. To deliver your subscription and restore purchases across your devices, RevenueCat receives transaction details and an anonymous app-user identifier generated for your installation. We do not receive or store your credit card number or Apple ID password.</p>
+    <p>See <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> for details on their handling of this data.</p>
+
+    <h3>Team schedules and weather feeds</h3>
+    <p>When you view a team, the app requests schedule and game-day weather information from Weatherball's backend service. These requests include only the league and team you are viewing — they contain <strong>no personal information, no account, and no location</strong>. Our backend is hosted on Vercel, and the feeds it returns are general content (not specific to you).</p>
+
+    <h3>App preferences and iCloud</h3>
+    <p>Your settings — such as favorite teams, display units, and notification preferences — are stored on your device. If you use iCloud, these preferences may sync across your own devices through Apple's iCloud key-value storage, under your Apple ID. We cannot access your iCloud data.</p>
+
+    <h3>Notifications</h3>
+    <p>Weatherball can send you weather alerts (for example, when rain, storms, or severe conditions are likely at your location). These notifications are scheduled <strong>locally on your device</strong>. Weatherball does not use remote push notifications and does not collect a push/device token. You can disable notifications at any time in iOS Settings or within the app.</p>
+
+    <h2>What we do <em>not</em> collect</h2>
+    <ul>
+      <li>No user accounts, names, email addresses, or passwords.</li>
+      <li>No analytics, behavioral tracking, or advertising identifiers.</li>
+      <li>No third-party advertising or data brokers.</li>
+      <li>No contacts, photos, microphone, or health data.</li>
+      <li>We never sell or rent your personal information.</li>
+    </ul>
+
+    <h2>Third-party services</h2>
+    <table>
+      <tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr>
+      <tr><td>Apple WeatherKit</td><td>Weather and forecast data</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Apple App Store / iCloud</td><td>Purchases, preference sync</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>Subscription management</td><td><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">revenuecat.com/privacy</a></td></tr>
+    </table>
+
+    <h2>Data retention</h2>
+    <p>Because Weatherball does not maintain user accounts, we do not retain personal profiles. Location data is used transiently to fetch weather and is not retained on our servers. Subscription records are retained by Apple and RevenueCat for as long as needed to provide and account for your subscription, in accordance with their policies.</p>
+
+    <h2>Your rights and choices</h2>
+    <ul>
+      <li><strong>Location:</strong> grant or revoke any time in iOS Settings.</li>
+      <li><strong>Notifications:</strong> turn off in the app or in iOS Settings.</li>
+      <li><strong>Subscription:</strong> manage or cancel in <em>iOS Settings → [your name] → Subscriptions</em>.</li>
+      <li><strong>Access/deletion requests:</strong> depending on your region (for example under GDPR or the CCPA), you may have rights regarding your personal data. Since we hold little to no personal data ourselves, most requests are directed to Apple or RevenueCat; contact us and we will help.</li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+    <p>Weatherball is not directed to children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us personal information, please contact us.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy from time to time. Material changes will be reflected by updating the "Last updated" date above. Continued use of Weatherball after changes take effect constitutes acceptance of the revised policy.</p>
 
     <h2>Contact</h2>
-    <p>Questions? Email <a href="mailto:chad@44points.com">chad@44points.com</a>.</p>
+    <p>Questions about this policy or your privacy? Email <a href="mailto:chad@44points.com">chad@44points.com</a>.</p>
+
+    <footer>
+      Weatherball is operated by 44&nbsp;Points.<!-- TODO: confirm full legal entity name and add governing-law jurisdiction (e.g. "These terms are governed by the laws of [State], USA.") if your legal counsel recommends it. -->
+      &copy; 2026 44&nbsp;Points. All rights reserved. &middot; <a href="/terms.html">Terms of Use</a>
+    </footer>
   </main>
 </body>
 </html>

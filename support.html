@@ -6,22 +6,77 @@
   <title>Support — Weatherball</title>
   <style>
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b1620; color: #f5f7fa; line-height: 1.6; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 8vh 24px 64px; }
-    h1 { letter-spacing: -0.02em; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 8vh 24px 96px; }
+    h1 { letter-spacing: -0.02em; margin-bottom: 0.2em; }
+    h2 { margin-top: 2.2em; font-size: 1.25rem; }
     a { color: #4ea1ff; }
+    .lead { font-size: 1.1rem; color: #d6e0ea; }
+    .callout { background: rgba(78,161,255,0.08); border: 1px solid rgba(78,161,255,0.25); border-radius: 10px; padding: 16px 20px; margin: 1.5em 0; }
+    details { border-bottom: 1px solid rgba(255,255,255,0.1); padding: 14px 0; }
+    summary { cursor: pointer; font-weight: 600; font-size: 1.02rem; }
+    summary::-webkit-details-marker { color: #4ea1ff; }
+    details p, details ul { color: #d6e0ea; }
+    ul { padding-left: 1.25em; }
+    li { margin: 0.35em 0; }
+    footer { margin-top: 4em; padding-top: 1.5em; border-top: 1px solid rgba(255,255,255,0.08); color: #9fb0c0; font-size: 0.9rem; }
   </style>
 </head>
 <body>
   <main class="wrap">
     <p><a href="/">&larr; Weatherball</a></p>
     <h1>Support</h1>
-    <p>Need help with Weatherball? We're happy to assist.</p>
+    <p class="lead">Need a hand with Weatherball? We're happy to help.</p>
 
-    <h2>Contact</h2>
-    <p>Email <a href="mailto:chad@44points.com">chad@44points.com</a> and we'll get back to you.</p>
+    <div class="callout">
+      <strong>Email us:</strong> <a href="mailto:chad@44points.com?subject=Weatherball%20Support">chad@44points.com</a><br>
+      We typically reply within 2&ndash;3 business days. Including your device model and iOS version helps us help you faster.
+    </div>
 
-    <h2>FAQ</h2>
-    <p>TODO: Add common questions and answers here.</p>
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>Weather isn't loading for my location</summary>
+      <p>Weatherball needs location access to show weather where you are. Check <em>iOS Settings → Privacy &amp; Security → Location Services</em> and make sure Location Services is on and Weatherball is set to "While Using the App." Also confirm your device has an internet connection, then reopen the app.</p>
+    </details>
+
+    <details>
+      <summary>I'm not getting weather notifications</summary>
+      <p>Make sure notifications are enabled in <em>iOS Settings → Notifications → Weatherball</em>, and that alerts are turned on inside the app's settings. Weatherball schedules alerts based on the forecast for your active weather location, so location access also needs to be enabled.</p>
+    </details>
+
+    <details>
+      <summary>How do I restore a subscription I already purchased?</summary>
+      <p>Open Weatherball's settings and choose <strong>Restore Purchases</strong>. Make sure you're signed in to the same Apple ID you used to subscribe. Restoring re-links your existing subscription at no additional charge.</p>
+    </details>
+
+    <details>
+      <summary>How do I manage or cancel my subscription?</summary>
+      <p>Subscriptions are billed through Apple, so they're managed in <em>iOS Settings → [your name] → Subscriptions → Weatherball</em>. From there you can change your plan or cancel. Cancelling stops future renewals; you keep access until the end of the current billing period. Refund requests are handled by Apple at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+    </details>
+
+    <details>
+      <summary>My widget or Apple Watch complication is out of date</summary>
+      <p>Widgets and watch complications refresh on a schedule set by the system to save battery, so they can lag a little behind the app. Opening the main app updates the shared data. If a widget still looks stuck, try removing and re-adding it.</p>
+    </details>
+
+    <details>
+      <summary>Can I change the units (°F/°C, mph/km/h)?</summary>
+      <p>Yes — open Weatherball's settings to choose your preferred temperature and speed units. Your choice syncs across the app, widgets, and the watch app.</p>
+    </details>
+
+    <details>
+      <summary>Which teams and leagues are supported?</summary>
+      <p>Supported leagues are shown in the app when you add a team. We add coverage over time — if a team or league you want is missing, let us know by email.</p>
+    </details>
+
+    <h2>Still need help?</h2>
+    <p>Email <a href="mailto:chad@44points.com?subject=Weatherball%20Support">chad@44points.com</a> with a description of the issue, your device model, and your iOS version, and we'll get back to you.</p>
+
+    <p class="lead" style="font-size:1rem;"><a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a></p>
+
+    <footer>
+      &copy; 2026 44&nbsp;Points. All rights reserved.
+    </footer>
   </main>
 </body>
 </html>
