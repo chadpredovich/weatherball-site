@@ -10,6 +10,23 @@
     h1 { letter-spacing: -0.02em; margin-bottom: 0.2em; }
     h2 { margin-top: 2.2em; font-size: 1.25rem; }
     a { color: #1a5fb4; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 2.5rem;
+      color: #0b1620;
+      text-decoration: none;
+    }
+    .brand img {
+      display: block;
+      width: min(220px, 58vw);
+      height: auto;
+    }
+    .back {
+      color: #55606a;
+      font-size: 0.95rem;
+    }
     .muted { color: #55606a; font-size: 0.9rem; }
     .lead { font-size: 1.1rem; color: #1c2733; }
     ul { padding-left: 1.25em; }
@@ -21,7 +38,10 @@
 </head>
 <body>
   <main class="wrap">
-    <p><a href="/">&larr; Weatherball</a></p>
+    <a class="brand" href="/" aria-label="Weatherball home">
+      <img src="/assets/weatherball_logo.svg" alt="Weatherball" />
+      <span class="back">&larr; Home</span>
+    </a>
     <h1>Terms of Use</h1>
     <p class="muted">Last updated: June 25, 2026</p>
 
