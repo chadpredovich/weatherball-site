@@ -41,12 +41,12 @@
       <img src="/assets/weatherball_logo.svg" alt="Weatherball" />
     </a>
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: July 11, 2026</p>
+    <p class="muted">Last updated: August 17, 2026</p>
 
     <p class="lead">Weatherball is built to be private by default. We don't make you create an account, we don't run analytics or advertising trackers, and we never sell your data.</p>
 
     <div class="callout">
-      <strong>The short version:</strong> Weatherball uses your location only to show you local weather. By default that location is handled on your device by Apple's WeatherKit and never sent to our servers. If you choose the optional OpenWeather provider in Settings, your coordinates are sent to our backend and forwarded to OpenWeather for that request only. If you subscribe, our payments partner (RevenueCat) and Apple process your subscription. That's it.
+      <strong>The short version:</strong> Weatherball uses your location only to show you local weather. That location is handled on your device by Apple's WeatherKit and never sent to our servers. If you subscribe, our payments partner (RevenueCat) and Apple process your subscription. That's it.
     </div>
 
     <p>This policy explains what information the Weatherball app ("Weatherball," "the app," "we," "us") collects, how it is used, and the choices you have. It applies to the Weatherball iOS app, its widgets, and the companion Apple Watch app.</p>
@@ -55,8 +55,7 @@
 
     <h3>Location</h3>
     <p>If you grant location access, Weatherball uses your device's location to load weather conditions and forecasts for where you are. Location is requested only while you are using the app ("When In Use").</p>
-    <p>By default, your location is processed on your device and passed to <strong>Apple WeatherKit</strong> to retrieve forecast data. Your precise location <strong>is not transmitted to or stored on Weatherball's own servers</strong> in this mode. Apple's handling of WeatherKit requests is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
-    <p>Weatherball also offers an optional alternate weather provider, <strong>OpenWeather</strong>, which you can select in the app's Settings. If you turn this on, your coordinates are sent to Weatherball's backend, which forwards them to OpenWeather to retrieve a forecast and returns the result to your device. Coordinates sent this way are used only to fetch that forecast, are briefly cached to reduce redundant requests, and are not linked to any account or profile. See <a href="https://openweathermap.org/privacy-policy" target="_blank" rel="noopener">OpenWeather's Privacy Policy</a> for their handling of this data.</p>
+    <p>Your location is processed on your device and passed to <strong>Apple WeatherKit</strong> to retrieve forecast data. Your precise location <strong>is not transmitted to or stored on Weatherball's own servers</strong>. Apple's handling of WeatherKit requests is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
     <p>You can change or revoke location access at any time in <em>iOS Settings → Privacy &amp; Security → Location Services → Weatherball</em>. The app remains usable without location access; you simply won't see weather for your current position.</p>
 
     <h3>Subscriptions and purchases</h3>
@@ -64,10 +63,10 @@
     <p>See <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> for details on their handling of this data.</p>
 
     <h3>Team schedules and weather feeds</h3>
-    <p>When you view a team, the app requests schedule and game-day weather information from Weatherball's backend service. These requests include only the league and team you are viewing — they contain <strong>no personal information, no account, and no location</strong>. Our backend is hosted on Vercel, and the feeds it returns are general content (not specific to you). This is separate from the optional OpenWeather requests described above, which do include your coordinates when that provider is selected.</p>
+    <p>When you view a team, the app requests schedule and game-day weather information from Weatherball's backend service. These requests include only the league and team you are viewing — they contain <strong>no personal information, no account, and no location</strong>. Our backend is hosted on Vercel, and the feeds it returns are general content (not specific to you).</p>
 
     <h3>App preferences and iCloud</h3>
-    <p>Your settings — such as favorite teams, display units, and notification preferences — are stored on your device. If you use iCloud, these preferences may sync across your own devices through Apple's iCloud key-value storage, under your Apple ID. We cannot access your iCloud data.</p>
+    <p>Your settings are stored on your device. Some preferences — such as favorite teams, saved trips, and onboarding state — may also sync across your own devices through Apple's iCloud key-value storage, under your Apple ID, if you use iCloud. Display units and notification preferences are stored locally on each device and are not iCloud-synced. We cannot access your iCloud data.</p>
 
     <h3>Notifications</h3>
     <p>Weatherball can send you weather alerts (for example, when rain, storms, or severe conditions are likely at your location). These notifications are scheduled <strong>locally on your device</strong>. Weatherball does not use remote push notifications and does not collect a push/device token. You can disable notifications at any time in iOS Settings or within the app.</p>
@@ -84,14 +83,13 @@
     <h2>Third-party services</h2>
     <table>
       <tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr>
-      <tr><td>Apple WeatherKit</td><td>Weather and forecast data (default provider)</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td></tr>
-      <tr><td>OpenWeather</td><td>Weather and forecast data (optional alternate provider; receives your coordinates only if selected)</td><td><a href="https://openweathermap.org/privacy-policy" target="_blank" rel="noopener">openweathermap.org/privacy-policy</a></td></tr>
+      <tr><td>Apple WeatherKit</td><td>Weather and forecast data</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td></tr>
       <tr><td>Apple App Store / iCloud</td><td>Purchases, preference sync</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td></tr>
       <tr><td>RevenueCat</td><td>Subscription management</td><td><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">revenuecat.com/privacy</a></td></tr>
     </table>
 
     <h2>Data retention</h2>
-    <p>Because Weatherball does not maintain user accounts, we do not retain personal profiles. Location data is used transiently to fetch weather and is not retained on our servers, whether using the default WeatherKit provider or the optional OpenWeather provider (coordinates sent to our backend for an OpenWeather request are used only to make that request and are briefly cached for efficiency, not stored long-term or linked to you). Subscription records are retained by Apple and RevenueCat for as long as needed to provide and account for your subscription, in accordance with their policies.</p>
+    <p>Because Weatherball does not maintain user accounts, we do not retain personal profiles. Location data is used transiently on your device to fetch weather via WeatherKit and is not sent to or retained on our servers. Subscription records are retained by Apple and RevenueCat for as long as needed to provide and account for your subscription, in accordance with their policies.</p>
 
     <h2>Your rights and choices</h2>
     <ul>
